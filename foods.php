@@ -54,11 +54,11 @@
                         $image_name = $row['image_name'];
                         ?>
 
-                        <div class="mt-3">
-                            <div class="card mb-3" style="max-width: 100%; height: 100%">
-                                <div class="row g-0">
-                                    <div class="col-md-3">
-                                        <?php 
+        <div class="mt-3">
+            <div class="card mb-3" style="max-width: 100%; height: 100%">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <?php 
                                                     //Check whether image available or not
                                                     if($image_name=="")
                                                     {
@@ -69,24 +69,24 @@
                                                     {
                                                         //Image Available
                                                         ?>
-                                        <img width="80%" src="<?php echo SITEURL; ?>images/food/<?php echo $image_name; ?>"
-                                            alt="Chicke Hawain Pizza">
-                                        <?php
+                        <img width="100%" src="<?php echo SITEURL; ?>images/food/<?php echo $image_name; ?>"
+                            alt="Chicke Hawain Pizza">
+                        <?php
                                                     }
                                                 ?>
-                
-                                    </div>
-                                  <div class="col-md-9">
-                                    <div class="card-body">
-                                      <h5 class="card-title"><?php echo $title; ?></h5>
-                                      <p class="card-text">৳<?php echo $price; ?></p>
-                                      <p class="card-text"><small class="text-muted"><?php echo $description; ?></small></p>
-                                      <a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id; ?>"
-                                        class="btn btn-success">Order Now</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $title; ?></h5>
+                            <p class="card-text">৳<?php echo $price; ?></p>
+                            <p class="card-text"><small class="text-muted"><?php echo $description; ?></small></p>
+                            <a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id; ?>"
+                                class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <?php
